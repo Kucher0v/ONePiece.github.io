@@ -1,0 +1,208 @@
+body  { 
+    background:url(img/фон.jpg);
+    background-size: 100%;
+    background-repeat: repeat ;
+    font: 100% helvetica, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+#bd{background-repeat: repeat;}
+.block-left{
+    position:fixed;
+    width:25%;
+    overflow:auto;
+    float: left;}
+    /*к сладеру с наградами*/
+#i1{opacity:1;}
+#i11{opacity:1;}
+#i12{opacity:1;}
+#i13{opacity:1;}
+#i14{opacity:1;}
+#i15{opacity:1;}
+#i16{opacity:1;}
+#i17{opacity:1;}
+#i18{opacity:1;}
+
+
+/* слайдер */  
+.slider{
+    width: 520px;
+    height:650px;
+    margin-top: 0px;
+    margin-left: 50% ;
+    border: 1px solid  white;
+    background-color:rgb(233, 170, 52);
+    position: relative;
+    float: left;
+}
+.slider-body{
+    width: 520px;
+    height: 650px;
+    position: absolute ;
+    right: 0 ;
+    top: 0;
+    margin-left: 0%;
+    float: left;
+    left: 40px;
+}
+.slider-body img{
+    transition: all ease 1.5s;
+    opacity: 0;
+    position: absolute;
+}
+.slider ul{
+    list-style-type:none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.slider ul li{margin: 10px;}
+.slider ul li a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align:center;
+    border: 1px solid #911E42;
+    color: #911E42;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.slider ul li a:hover { 
+    color: #911E42;
+    background: rgb(238, 16, 35);}
+.slider-body img:target{opacity:1}
+/* Меню */  
+#container {
+    margin: 40px auto;
+    width: 50%; 
+    border-radius: 20px;
+}
+a {
+font-weight: bold;
+    text-decoration: none;
+    
+}
+nav {
+    height: 50px;
+    line-height:50px;
+    width: 100%;
+}   
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    background:  #FF8000;
+    float: left;
+    position: relative;
+    width: 20%;
+}
+nav a {                
+        border-right: 3px solid #911E42;
+        border-left: 3px solid  #911E42;
+        display: block;
+        font-size: 14px;
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+        transition: all 300ms ease-out;
+    
+    
+    }
+a{ color: #ccc;}
+nav li:hover > a {
+            background: rgb(235, 46, 46);
+            border-left-color: #911E42;
+            box-shadow: inset 0 0 15px rgb(238, 16, 35);
+        }
+
+nav span {position: relative;}
+nav a:active span {
+    color: #ffd;
+    position: relative;
+    top: 1px;
+}
+.dropdown > a span:after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid #ccc;
+        content: "";
+        right: -13px;
+        position: absolute;
+        top: 3px;
+    }
+.dropdown:hover > a span:after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+        content: "";
+        right: -15px;
+        position: absolute;
+        top: 6px;
+    }
+nav ul ul {
+            opacity: 0;
+            position: absolute;
+            top: 50px;
+            visibility: hidden;
+            width: 0;
+             transition: all 300ms ease-out;
+        }
+nav ul li:hover ul {
+                opacity: 1;
+                visibility: visible;
+                width: 100%;
+            }
+nav ul ul li { z-index: 15;
+                background: #FF8000;
+                float: none;    
+                width: 100%;
+                }
+nav ul ul li a {
+                border-right: none;
+                border-left: none;
+                font-size: 12px;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 0 0 15px;
+                text-align: left;
+            }
+nav ul ul li a:hover {
+                font-size: 17px;
+                
+               
+                }               
+nav ul ul a:active span {
+                    color:rgb(190, 243, 65);
+                    position: relative;
+                    top: 1px;}
+/* подпись к наградам */
+#fon1{
+    color:#911E42;
+     margin-left:25%;
+    background-color: rgb(233, 170, 52);
+    border-radius: 30px;
+}
+#fon2{
+    color:#911E42;
+     margin-left:25%;
+     margin-right: 25%;
+    background-color: rgb(233, 170, 52);
+    border-radius: 30px;
+}
+#sl{font-size: 30px; }
+#sl1{font-size: 30px;
+text-align: center; }
+.pravo {float: left;
+       width: 48%;
+    margin-left:1%;
+margin-top:1%;
+margin-bottom: 5px; }
+.levo { float: right;
+       width: 48%;
+    margin-right:1%;
+    margin-top:1%;
+    margin-bottom: 5px;  }
+
