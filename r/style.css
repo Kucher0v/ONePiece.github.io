@@ -9,7 +9,7 @@ body  {
 }
 #bd{background-repeat: repeat;}
 .block-left{
-    position:fixed;
+    position:absolute;
     width:25%;
     overflow:auto;
     float: left;}
